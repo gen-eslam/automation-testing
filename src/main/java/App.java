@@ -10,5 +10,6 @@ public class App {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://www.google.com");
         driver.close();
+
     }
 }
