@@ -10,6 +10,7 @@ public class GetTextFromWEB {
         WebDriver driver = new ChromeDriver();
         System.setProperty("webdriver.chrome,driver", "chromedriver.exe");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         driver.get("http://www.wikpedia.org");
         WebElement titleOfWebPage = driver.findElement(By.cssSelector("#www-wikipedia-org > div.central-textlogo > h1 > span"));
         String text= titleOfWebPage.getText();
